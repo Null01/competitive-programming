@@ -26,10 +26,9 @@ public class Prime {
 
     }
 
-    public List<Long> find_factors_prime(long n, List<Integer> primes) {
-        List<Long> factors = new ArrayList<Long>();
-        int index = 0;
-        long temp = 1;
+    public List<Integer> find_factors_prime(Long n, List<Integer> primes) {
+        List<Integer> factors = new ArrayList<Integer>();
+        Integer temp = 1, index = 0;
         while (n != 1 && index < primes.size()) {
             if (n % primes.get(index) == 0) {
                 n /= primes.get(index);

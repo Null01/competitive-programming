@@ -37,8 +37,7 @@ public class Triangle {
         return (a * b * c) / (4 * area_triangle);
     }
 
-    public double radius_formed_by_sizes_triangle(double la, double lb,
-            double lc) {
+    public double radius_formed_by_sizes_triangle(double la, double lb, double lc) {
         if (la == 0 || lb == 0 || lc == 0) {
             return 0.0;
         }
@@ -57,7 +56,7 @@ public class Triangle {
         double mat[][] = {{a.x, a.y, 1, P1}, {b.x, b.y, 1, P2},
         {c.x, c.y, 1, P3}};
         SystemEquation s = new SystemEquation(mat);
-        double solve[] = s.solve_system_3_unknown();
+        double solve[] = s.solveSystem3X3();
         double x = solve[0] / 2.0;
         double y = solve[1] / 2.0;
         double r = Math.sqrt((x * x) + (y * y) - solve[2]);

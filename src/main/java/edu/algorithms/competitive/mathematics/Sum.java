@@ -3,7 +3,7 @@ package edu.algorithms.competitive.mathematics;
 
 public class Sum {
 
-    public int find_max_sum(int[][] matrix) {
+    public int findMaxSum(int[][] matrix) {
         int maxSum = 0;
         for (int left = 0; left < matrix[0].length; left++) {
             int temp[] = new int[matrix.length];
