@@ -1,5 +1,5 @@
 # Competitive Programming
-Algoritmos Competitivos de Programación
+Resolution of computational problems, documents of learn algorithms and resources of solutions.
 
 
 ## Books
